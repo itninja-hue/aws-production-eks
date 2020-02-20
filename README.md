@@ -55,6 +55,18 @@ module "production-eks" {
 ```bash
 terraform apply
 ```
+## Accessing the cluster
+
+ssh to the bastion host.
+
+
+Set your Access Keys as environment variables
+```shell
+export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCEXAMPLEKEY
+#interact with cluster
+kubectl get nodes
+```
 
 ## Authors
 
@@ -62,4 +74,4 @@ terraform apply
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
