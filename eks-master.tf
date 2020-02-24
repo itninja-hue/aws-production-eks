@@ -4,7 +4,7 @@ resource "aws_eks_cluster" "eks" {
   role_arn = "${aws_iam_role.eks-master.arn}"
   vpc_config {
       security_group_ids = ["${aws_security_group.eks-master.id}"]
-      subnet_ids = "${var.subnet_ids}"
+      subnet_ids = "${var.private_subnets_ids}"
       endpoint_private_access = true
       endpoint_public_access = false
   }

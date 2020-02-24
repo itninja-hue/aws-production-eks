@@ -18,7 +18,7 @@ variable "keypair-name" {
   description = "ssh Keypair name"
 }
 
-variable "private_subnet_ids" {
+variable "private_subnets_ids" {
   type = list(string)
   description = "Private subntes ids list"
 }

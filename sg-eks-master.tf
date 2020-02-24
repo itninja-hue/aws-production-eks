@@ -1,5 +1,5 @@
 provider "aws" {
-  region = var.region
+  region = "${var.region}"
   version = "~> 2.47"
 }
 resource "aws_security_group" "eks-master" {

@@ -21,8 +21,8 @@ module "production-eks" {
     source = "github.com/itninja-hue/aws-production-eks"
     vpc_id = "vpcXXXX"
     keypair-name = "ssh_production_keypair"
-    private_subnet_ids = ["private_subnet_id1","private_subnet_id2"]
-    public_subnet_ids = ["public_subnet_id1","public_subnet_id2"]
+    private_subnets_ids = ["private_subnet_id1","private_subnet_id2"]
+    public_subnets_ids = ["public_subnet_id1","public_subnet_id2"]
     bastion_ingress_cidr_block = ["cidr_block_1","cidr_block_2"]
 }
 
@@ -37,8 +37,8 @@ module "production-eks" {
     vpc_id = "vpcXXXX"
     eks_cluster-name = "production_cluster"
     keypair-name = "ssh_production_keypair"
-    private_subnet_ids = ["private_subnet_id1","private_subnet_id2"]
-    public_subnet_ids = ["public_subnet_id1","public_subnet_id2"]
+    private_subnets_ids = ["private_subnet_id1","private_subnet_id2"]
+    public_subnets_ids = ["public_subnet_id1","public_subnet_id2"]
     worker_nodes_disk_size = "200"
     worker_nodes_instance_types = ["t3a.large"]
     worker_nodes_scaling_desired_size = "3"
@@ -53,6 +53,7 @@ module "production-eks" {
 ## Deployment
 
 ```bash
+terraform init
 terraform apply
 ```
 ## Accessing the cluster

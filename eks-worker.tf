@@ -2,7 +2,7 @@ resource "aws_eks_node_group" "eks-workers" {
     cluster_name = "${aws_eks_cluster.eks.name}"
     node_group_name = "production_worker_nodes"
     node_role_arn = "${aws_iam_role.eks-workers.arn}"
-    subnet_ids = "${var.subnet_ids}"
+    subnet_ids = "${var.private_subnets_ids}"
     disk_size = "${var.worker_nodes_disk_size}"
     instance_types = "${var.worker_nodes_instance_types}"
     version = "1.14"
