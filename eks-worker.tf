@@ -5,7 +5,7 @@ resource "aws_eks_node_group" "eks-workers" {
     subnet_ids = "${var.private_subnets_ids}"
     disk_size = "${var.worker_nodes_disk_size}"
     instance_types = "${var.worker_nodes_instance_types}"
-    version = "1.14"
+    version = "1.15"
     remote_access {
         ec2_ssh_key = "${var.keypair-name}"
         source_security_group_ids = ["${aws_security_group.eks-bastion.id}"]
