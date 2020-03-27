@@ -7,18 +7,18 @@ Terraform script for production grade Amazon Elastic Kubernetes Service (Amazon 
 Terraform script that provision a private Amazon Elastic Kubernetes Service (Amazon EKS) accessable only via a bastion host.
 
 ## Sections
-- [Prerequisites](###Prerequisites)
-- [Usage](###Usage)
-    - [Defaults](####Default)
-    - [All_params](####All_params)
+- [Prerequisites](#Prerequisites)
+- [Usage](#Usage)
+    - [Defaults](#Default)
+    - [All_params](#All_params)
 - [Deployment](##Deployment)
-- [Accessing_the_cluster](##Accessing_the_cluster)
-- [Diagrams](##Diagrams)
-    - [Cluster_Diagram](###Cluster_Diagram)
-    - [Bastion_Security_Groups_Diagram](###Bastion_Security_Groups_Diagram)
-- [Sample_VPC_Script](###Sample_VPC_Script)
-- [Post_Deployment](###Post_Deployment)
-    - [Elastic_File_System](###Elastic_File_System)
+- [Accessing_the_cluster](#Accessing_the_cluster)
+- [Diagrams](#Diagrams)
+    - [Cluster_Diagram](#Cluster_Diagram)
+    - [Bastion_Security_Groups_Diagram](#Bastion_Security_Groups_Diagram)
+- [Sample_VPC_Script](#Sample_VPC_Script)
+- [Post_Deployment](#Post_Deployment)
+    - [Elastic_File_System](#Elastic_File_System)
 ### Prerequisites
 
 VPC (virtual private cloud) with private and public subnets.
