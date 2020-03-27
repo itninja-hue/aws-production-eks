@@ -23,7 +23,7 @@ Terraform script that provision a private Amazon Elastic Kubernetes Service (Ama
 
 VPC (virtual private cloud) with private and public subnets.
 
-[Sample VPC terraform Script](###Sample_VPC_Script)
+[Sample VPC terraform Script](#Sample_VPC_Script)
 
 ### Usage
 
